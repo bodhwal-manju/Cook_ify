@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First full website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" /> 
+  <!-- <link rel = "stylesheet" href = "style.css"> -->
+
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html">
+          <img src="cooify.jpg" alt="" />
+        </a>
+        <div class="nav-links" id="navlinks">
+            <i class=" fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="course.html">Course</a></li>
+            <li><a href="blog.html">Blog</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" ></i>
+      </nav>
+<h1>About Cookify</h1>
+    </section>
+<!-- -----about us content---- -->
+<section class="about-us">
+<div class="row">
+    <div class="about-col">
+        <!-- <h1>We are the world's largest university </h1> -->
+        <p>Cookify is an innovative automated recipe generator designed to provide users with easy-to-follow and delicious recipes for every occasion. With Cookify, you can quickly and easily generate recipes that are tailored to your preferences, dietary restrictions, and ingredients on hand.
+<br>
+<br>
+            Our advanced algorithms take into account your taste preferences and nutritional requirements to suggest recipes that you'll love. Whether you're looking for healthy meals, decadent desserts, or quick and easy snacks, Cookify has you covered.
+            <br>
+            <br>
+            Our user-friendly interface makes it easy to navigate through the recipe generator and find the perfect recipe for your needs. Simply input your desired ingredients, select your dietary preferences, and let Cookify do the rest.
+           <br> 
+           <br>
+            Cookify's recipe generator is perfect for busy individuals who want to eat healthy, delicious meals but don't have the time to search for recipes. With Cookify, you can quickly and easily generate recipes that fit your lifestyle and taste preferences.
+           <br>
+<br>
+            Whether you're an experienced home cook or a beginner, Cookify's automated recipe generator makes it easy to create tasty, healthy meals that your whole family will love. Try Cookify today and discover a world of delicious, easy-to-make recipes at your fingertips.</p>
+        <!-- <a href="">EXPLORE NOW</a> -->
+    </div>
+    <!-- <div class="about-col">
+        <img src="about.jpg" alt="">
+    </div> -->
+</div>
+</section>
+
+
+
+<!-- ------Footer---- -->
+
+<section class="footer">
+  <!-- <h4>About Us</h4> -->
+  <p>Copyright © www.cookify.com .All rights Reversed!</p>
+
+  <div class="icons">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-twitter"></i>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    <!-- ------Java----- -->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+  </body>
+</html>

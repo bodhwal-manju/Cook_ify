@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form To Email Using JavaScript</title>
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+<link rel = "stylesheet" href = "style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+
+    
+    <section class="sub-header">
+        <nav>
+          <a href="index.html">
+            <img src="cooify.jpg" alt="" />
+          </a>
+          <div class="nav-links" id="navlinks">
+              <i class=" fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <!-- <li><a href="course.html">Course</a></li>
+              <li><a href="blog.html">Blog</a></li> -->
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+  <h1>Contact us</h1>
+      </section>
+
+
+   <div class="container">
+   
+
+   <form onsubmit="sendEmail(); reset(); return false;">
+    <h3>GET IN TOUCH</h3>
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Email id" required>
+    <input type="text" id="phone" placeholder="Phone no." required>
+    <textarea id="messege" rows="4"  placeholder="Enter message or reviews"></textarea>
+    <button type="submit">Send</button>
+   </form>
+   </div>
+
+<!-- ------Footer---- -->
+
+<section class="footer">
+    <!-- <h4>About Us</h4> -->
+    <p>Copyright © www.cookify.com .All rights Reversed!</p>
+  
+    <div class="icons">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+  </section>
+
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <script src="script.js"></script>
+   <script> 
+        function sendEmail(){s
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let messege = document.getElementById("messege").value;
+
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "contactform184@gmail.com",
+            Password : "C51B00C049B8D0E5E4CCDB210B8B31AC69B5",
+            To : 'aaryanmaheshwari1173@gmail.com',
+            From : "contactform184@gmail.com",
+            Subject : "Contact Form",
+            Body : "name: "+ name + "<br/>" + email + "<br/>phone:    " + phone + "<br/s>messege:  " + messege
+}).then(
+  message => alert(message)
+);
+        }
+
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+
+   </script>
+</body>
+</html>

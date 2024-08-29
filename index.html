@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"/>
+  <title>Find Meal For Your Ingredients</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel = "stylesheet" href = "style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html">
+        <img src="cooify.jpg" alt="" />
+      </a>
+      <div class="logoname">
+          <ul>
+              <li>cookify</li>
+          </ul>
+      </div>
+      <div class="nav-links" id="navlinks">
+          <i class=" fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <!-- <li><a href="course.html">Course</a></li>
+          <li><a href="blog.html">Blog</a></li> -->
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </ul>
+        
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()" ></i>
+      </nav>
+  </section>
+<div class="text-box">
+  <h1 class = "title">Welcome to cookify</h1>
+  <blockquote>lets find the recipe of your favourate food<br>
+    <!-- <cite>- Jamie Oliver</cite> -->
+  </blockquote>
+
+  <div class = "meal-search-box">
+    <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
+    <button type = "submit" class = "search-btn btn" id = "search-btn">
+      <i class = "fas fa-search"></i>
+    </button>
+  </div>
+
+
+</div>
+
+     
+
+      
+      <!-- <i class="fa fa-bars" onclick="showMenu()" ></i> -->
+      <!-- </nav> -->
+    <!-- </section> -->
+
+
+
+  <div class = "container">
+    <div class = "meal-wrapper">
+      <div class = "meal-search">
+        <!-- <h2 class = "title">Welcome to cookify</h2>
+        <blockquote>lets find the recipe of your favourate food<br> -->
+          <!-- <cite>- Jamie Oliver</cite> -->
+        <!-- </blockquote> -->
+
+        <!-- <div class = "meal-search-box">
+          <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+        </div>
+      </div> -->
+
+      <div class = "meal-result">
+        <h2 class = "title">Your Search Results:</h2>
+        <div id= "meal">
+          <!-- meal item -->
+          <!-- <div class = "meal-item">
+            <div class = "meal-img">
+              <img src = "food.jpg" alt = "food">
+            </div>
+            <div class = "meal-name">
+              <h3>Potato Chips</h3>
+              <a href = "#" class = "recipe-btn">Get Recipe</a>
+            </div>
+          </div> -->
+          <!-- end of meal item -->
+        </div>
+      </div>
+
+
+      <div class = "meal-details">
+        <!-- recipe close btn -->
+        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+
+        <!-- meal content -->
+        <div class = "meal-details-content">
+          <!-- <h2 class = "recipe-title">Meals Name Here</h2>
+          <p class = "recipe-category">Category Name</p>
+          <div class = "recipe-instruct">
+            <h3>Instructions:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+          </div>
+          <div class = "recipe-meal-img">
+            <img src = "food.jpg" alt = "">
+          </div>
+          <div class = "recipe-link">
+            <a href = "#" target = "_blank">Watch Video</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ------Footer---- -->
+
+<section class="footer">
+  <!-- <h4>About Us</h4> -->
+  <p>   Copyright   © www.cookify.com .All  rights  Reversed!</p>
+
+  <div class="icons">
+    <img class="fbicon" src="fb.jpeg" height="30px" width="30px">
+    <img class="inicon" src="in.jpeg" height="30px" width="30px">
+    <img class="emicon" src="em.png" height="30px" width="30px">
+    <img class="liicon" src="li.png" height="30px" width="30px">
+  </div>
+</section>
+
+  <script src = "script.js"></script>
+  <script>
+    var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+  </script>
+</body>
+</html>
