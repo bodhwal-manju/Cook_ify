@@ -22,9 +22,9 @@ Check out the live demo of Cookify: [Cookify](https://cookify-seven.vercel.app/)
 
 To run Cookify locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/Swapn2003/Cookify.git`
-2. Navigate to the project directory: `cd Cookify`
-5. Open index.html in browser to access Cookify.
+1. Clone the repository: `git clone https://github.com/bodhwal-manju/Cook_ify.git`
+2. Navigate to the project directory: `cd Cook_ify`
+5. Open index.html in browser to access Cook_ify.
 
 ## Technologies Used
 
